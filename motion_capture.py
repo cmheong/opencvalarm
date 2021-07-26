@@ -6,7 +6,7 @@ width = 640
 height = 480
 cam_no = 1
 def create_camera (channel):
-    rtsp = "http://" + username + ":" + password + "@123.456.7.8/cgi/mjpg/mjpg.cgi"
+    rtsp = "http://" + username + ":" + password + "@192.168.10.30/cgi/mjpg/mjpg.cgi"
     cap = cv2.VideoCapture()
     cap.open(rtsp)
     cap.set(3, 640)  # ID number for width is 3
